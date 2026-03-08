@@ -7,7 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* ── Reset & Base ── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -55,6 +57,7 @@ a {
   text-decoration: none;
   transition: color var(--transition);
 }
+
 a:hover {
   color: #c4b5fd;
 }
@@ -123,6 +126,7 @@ img {
   font-weight: 500;
   transition: color var(--transition);
 }
+
 .nav-links a:hover {
   color: var(--text-primary);
 }
@@ -136,6 +140,7 @@ img {
   font-size: 0.85rem;
   transition: transform var(--transition), box-shadow var(--transition);
 }
+
 .nav-cta:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-glow);
@@ -262,6 +267,7 @@ img {
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
 }
+
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
@@ -282,6 +288,7 @@ img {
   cursor: pointer;
   transition: transform var(--transition), background var(--transition);
 }
+
 .btn-secondary:hover {
   transform: translateY(-2px);
   background: var(--bg-card-hover);
@@ -331,6 +338,7 @@ img {
   border-radius: 8px;
   transition: transform var(--transition);
 }
+
 .store-badge:hover {
   transform: scale(1.05);
 }
@@ -448,6 +456,7 @@ img {
   padding: 20px 0 40px;
   scrollbar-width: none;
 }
+
 .screenshots-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -464,6 +473,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform var(--transition);
 }
+
 .screenshot-item img:hover {
   transform: scale(1.03);
 }
@@ -484,7 +494,8 @@ img {
 .highlight-row.reverse {
   direction: rtl;
 }
-.highlight-row.reverse > * {
+
+.highlight-row.reverse>* {
   direction: ltr;
 }
 
@@ -747,6 +758,7 @@ img {
   font-size: 0.9rem;
   transition: color var(--transition);
 }
+
 .footer-col a:hover {
   color: var(--text-primary);
 }
@@ -771,6 +783,7 @@ img {
   font-size: 1.2rem;
   transition: color var(--transition);
 }
+
 .footer-social a:hover {
   color: var(--accent-light);
 }
@@ -781,6 +794,7 @@ img {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -788,13 +802,27 @@ img {
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Intersection Observer animations */
@@ -810,73 +838,445 @@ img {
 }
 
 /* ── Responsive ── */
+
+/* --- Tablet (max 968px) --- */
 @media (max-width: 968px) {
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
   .hero .container {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 40px;
   }
+
   .hero p {
     margin-left: auto;
     margin-right: auto;
   }
+
   .hero-buttons {
     justify-content: center;
   }
+
+  .hero-visual {
+    order: -1;
+  }
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .highlight-row,
   .highlight-row.reverse {
     grid-template-columns: 1fr;
     gap: 40px;
     direction: ltr;
   }
+
   .stats-row {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .pricing-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
   }
+
   .pricing-card.featured {
     transform: none;
   }
+
   .pricing-card.featured:hover {
     transform: translateY(-4px);
   }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .phone-mockup {
     width: 220px;
   }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .cta-section {
+    padding: 70px 0;
+  }
 }
 
-@media (max-width: 640px) {
+/* --- Mobile Nav Menu --- */
+.nav-menu-open {
+  display: flex !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: rgba(10, 10, 15, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 99;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.nav-menu-open a {
+  font-size: 1.3rem !important;
+  color: var(--text-primary) !important;
+}
+
+.nav-menu-open .nav-cta {
+  font-size: 1rem !important;
+  padding: 12px 32px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- Small tablet / large phone (max 768px) --- */
+@media (max-width: 768px) {
   .nav-links {
     display: none;
   }
+
   .nav-toggle {
     display: block;
   }
+
+  .container {
+    padding: 0 20px;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
+
+  .feature-card {
+    padding: 24px;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+  }
+
   .stats-row {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
+
+  .stat-item {
+    padding: 20px 12px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
+
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
+    text-align: center;
   }
-  .hero h1 {
-    font-size: 2.2rem;
+
+  .footer {
+    padding: 40px 0 24px;
   }
+
   .store-badges {
     justify-content: center;
+  }
+
+  .screenshots-scroll {
+    padding: 20px 20px 40px;
+    gap: 14px;
+  }
+
+  .screenshot-item img {
+    width: 200px;
+    border-radius: 16px;
+  }
+
+  .pricing-grid {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .pricing-card {
+    padding: 24px 20px;
+  }
+
+  .pricing-price {
+    font-size: 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-section p {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 22px;
+    font-size: 0.9rem;
+  }
+
+  .phone-mockup {
+    width: 200px;
+  }
+
+  .highlight-content h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Legal pages */
+  .legal-page {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .legal-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.15rem;
+    margin-top: 28px;
+  }
+}
+
+/* --- Phone (max 480px) --- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 90px 0 50px;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.92rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .store-badges {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .phone-mockup {
+    width: 180px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    margin-bottom: 28px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+  }
+
+  .stats-row {
+    gap: 10px;
+  }
+
+  .stat-item {
+    padding: 16px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .screenshot-item img {
+    width: 170px;
+    border-radius: 14px;
+  }
+
+  .pricing-card {
+    padding: 20px 16px;
+  }
+
+  .pricing-price {
+    font-size: 1.8rem;
+  }
+
+  .pricing-period {
+    font-size: 0.75rem;
+  }
+
+  .pricing-features li {
+    font-size: 0.85rem;
+  }
+
+  .cta-section {
+    padding: 50px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 30px 0 20px;
+  }
+
+  .footer-grid {
+    gap: 20px;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+  }
+
+  .footer-col h4 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-col a {
+    font-size: 0.85rem;
+  }
+
+  /* Legal pages on small phones */
+  .legal-page {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .legal-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .legal-content h2 {
+    font-size: 1.1rem;
+    margin-top: 24px;
+  }
+
+  .legal-content p,
+  .legal-content li {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .legal-content ul {
+    padding-left: 16px;
+  }
+}
+
+/* ── Safe area for notched phones ── */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .footer {
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+
+  .nav {
+    padding-top: calc(16px + env(safe-area-inset-top));
   }
 }
 
