@@ -36,7 +36,7 @@
         <div class="container">
             <div class="legal-content">
                 <h1>Privacy Policy</h1>
-                <p class="last-updated">Last updated: March 8, 2026</p>
+                <p class="last-updated">Last updated: March 11, 2026</p>
 
                 <p>NiPa Studio ("we", "our", or "us") operates the NiPa Player mobile application (the "App"). This
                     Privacy Policy explains how we collect, use, store, and protect your personal data when you use our
@@ -90,7 +90,9 @@
                 <p>The App allows you to add your own IPTV playlists (M3U URLs or Xtream Codes API credentials). This
                     data is:</p>
                 <ul>
-                    <li>Stored <strong>locally on your device</strong> by default</li>
+                    <li>Stored <strong>locally on your device</strong> by default, <strong>encrypted at rest</strong>
+                        using AES-256. The encryption key is stored securely in the device's native keychain
+                        (Keychain on iOS, EncryptedSharedPreferences on Android)</li>
                     <li>If you voluntarily enable Cloud Sync, your playlist data is synced to your account on Cloud
                         Firestore, protected by Firebase Security Rules and encrypted in transit (TLS) and at rest</li>
                     <li>We <strong>do not monitor, access, inspect, or control</strong> the content of your playlists or
@@ -160,6 +162,8 @@
                 <ul>
                     <li>All data transmitted between the App and our servers is encrypted using TLS (Transport Layer
                         Security)</li>
+                    <li>Playlist credentials stored locally on your device are <strong>encrypted at rest using
+                        AES-256</strong>, with the encryption key secured in the device's native keychain</li>
                     <li>Data at rest in Firebase is encrypted using AES-256</li>
                     <li>Access to user data is restricted by Firebase Security Rules to the authenticated user only</li>
                     <li>Passwords are hashed using industry-standard algorithms and are never stored in plain text</li>
