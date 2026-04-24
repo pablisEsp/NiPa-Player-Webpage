@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — NiPa Player</title>
+  <meta name="description" content="Frequently asked questions about NiPa Player. Learn about playlists, EPG, Chromecast, Cloud Sync, subscriptions, and more.">
+  <meta name="keywords" content="NiPa Player FAQ, IPTV help, M3U playlist, Xtream Codes, EPG guide, Chromecast, Cloud Sync">
+  <meta property="og:title" content="FAQ — NiPa Player">
+  <meta property="og:description" content="Find answers to common questions about NiPa Player.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled">
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="assets/icon.png" alt="NiPa Player" onerror="this.style.display='none'">
+        <span>NiPa Player</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- FAQ Content -->
+  <section class="legal-page">
+    <div class="container">
+      <div class="faq-wrapper">
+        <div class="section-header" style="margin-bottom: 48px;">
+          <span class="overline">Support</span>
+          <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 16px;">Frequently Asked Questions</h1>
+          <p>Everything you need to know about NiPa Player. Can't find the answer you're looking for? <a href="mailto:dev@nipaplayer.com">Contact us</a>.</p>
+        </div>
+
+        <!-- Search -->
+        <div class="faq-search-wrapper">
+          <svg class="faq-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="faqSearch" class="faq-search" placeholder="Search questions...">
+        </div>
+
+        <!-- FAQ Sections rendered by JS -->
+        <div id="faqContainer"></div>
+
+        <!-- No results -->
+        <div id="faqNoResults" class="faq-no-results" style="display:none;">
+          <p>😕 No questions match your search. Try different keywords or <a href="mailto:dev@nipaplayer.com">contact us</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>&copy; 2026 NiPa Studio. All rights reserved.</span>
+        <div>
+          <a href="/" style="color: var(--text-muted);">Home</a> &nbsp;·&nbsp;
+          <a href="privacy-policy.html" style="color: var(--text-muted);">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="terms.html" style="color: var(--text-muted);">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // FAQ Data
+  const faqData = [
+    { title: "General", icon: "💡", items: [
+      ["What is NiPa Player?", "NiPa Player is a premium IPTV media player for iOS, Android, Android TV, and macOS. It lets you stream Live TV, Movies, and Series from your own IPTV provider. NiPa Player does not provide, host, or stream any content — you bring your own playlists."],
+      ["What platforms does NiPa Player support?", "<strong>iPhone & iPad</strong> (iOS 15+), <strong>Android phones & tablets</strong> (Android 7+), <strong>Android TV / Google TV</strong>, and <strong>macOS</strong> (Apple Silicon & Intel)."],
+      ["Is NiPa Player free?", "NiPa Player offers a <strong>7-day free trial</strong> with full access to all features. After the trial, a subscription (monthly, yearly, or lifetime) is required. Free users can still use the app with 1 playlist."],
+      ["What languages does NiPa Player support?", "The app is available in <strong>22 languages</strong>: English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Hindi, Arabic, Bengali, Turkish, Polish, Dutch, Indonesian, Swedish, Norwegian, Vietnamese, Thai, and Urdu."]
+    ]},
+    { title: "Playlists", icon: "📋", items: [
+      ["What playlist formats are supported?", "NiPa Player supports three formats:<br>1. <strong>Xtream Codes</strong> — Enter your server URL, username, and password.<br>2. <strong>M3U URL</strong> — Paste a direct link to an M3U or M3U8 playlist file.<br>3. <strong>M3U File</strong> — Import a local .m3u or .m3u8 file from your device (mobile only)."],
+      ["How do I add a playlist?", "1. Open the app and tap <strong>\"Add Playlist\"</strong>.<br>2. Choose the format tab (Xtream Codes, M3U URL, or M3U File).<br>3. Enter a name and the required credentials or URL.<br>4. Tap <strong>\"Add Playlist\"</strong> — the app will validate your credentials and load the content."],
+      ["Can I have multiple playlists?", "Yes! <strong>Pro subscribers</strong> can add unlimited playlists. Free users are limited to 1 playlist. You can switch between playlists from <strong>Settings > All Playlists</strong>."],
+      ["How do I switch between playlists?", "Go to <strong>Settings > All Playlists</strong> and tap the playlist you want to use. Tap <strong>\"Set as Active\"</strong> to switch."],
+      ["How do I update my playlist?", "Go to <strong>Settings</strong>, find your playlist, and tap <strong>\"Update Playlist\"</strong>. This will re-download all channels and categories from the server."],
+      ["My playlist shows \"Expired\" — what should I do?", "This means your IPTV subscription with your provider has expired. Contact your IPTV service provider to renew your credentials."],
+      ["Can I reorder my playlists?", "Yes — go to <strong>Settings > All Playlists</strong>, tap the reorder icon, and drag playlists into your preferred order."]
+    ]},
+    { title: "Content Browsing", icon: "🔍", items: [
+      ["How is content organized?", "Content is organized into three main sections:<br>• <strong>Live TV</strong> — Live streaming channels, organized by categories (Sports, News, Entertainment, etc.)<br>• <strong>Movies</strong> — Video on Demand (VOD) movies with poster art, synopsis, cast info, and trailers.<br>• <strong>Series</strong> — TV series organized by seasons and episodes."],
+      ["How do I search for content?", "Tap the <strong>search icon</strong> (🔍) from the main menu. You can search across all content types — live channels, movies, and series — at once. Recent searches are saved for quick access."],
+      ["What is \"Continue Watching\"?", "When you stop watching a movie or series episode midway, it appears in the <strong>\"Continue Watching\"</strong> section on the main menu. Tap it to resume exactly where you left off."],
+      ["What is \"Recently Added\"?", "The <strong>\"Recently Added\"</strong> section shows content that was most recently added to your playlist by your IPTV provider."],
+      ["Can I reorder categories?", "Yes! Within each content section (Live TV, Movies, Series), long-press a category or use the <strong>reorder</strong> button to customize the order. You can sort A-Z, Z-A, or manually drag categories."]
+    ]},
+    { title: "Video Player", icon: "▶️", items: [
+      ["What are the player controls?", "• <strong>Tap</strong> the screen to show/hide controls.<br>• <strong>Play/Pause</strong> button in the center.<br>• <strong>Seek bar</strong> (for movies and series) — drag to jump to a specific time.<br>• <strong>10-second skip</strong> — buttons to skip forward or backward.<br>• <strong>Back arrow</strong> to exit the player."],
+      ["How do volume and brightness gestures work?", "On mobile devices:<br>• <strong>Swipe up/down on the right side</strong> of the screen to adjust <strong>volume</strong>.<br>• <strong>Swipe up/down on the left side</strong> of the screen to adjust <strong>brightness</strong>."],
+      ["Can I change the aspect ratio?", "Yes! In the player settings (gear icon), choose from: <strong>Auto (Original)</strong>, <strong>16:9</strong>, <strong>4:3</strong>, or <strong>Fill Screen</strong>."],
+      ["Can I change playback speed?", "Yes! For movies and series (not live TV), you can adjust playback speed from <strong>0.25x to 2.0x</strong> via the player settings."],
+      ["How does the sleep timer work?", "In the player settings, set a sleep timer (15, 30, 45, 60, 90, or 120 minutes). The player will automatically pause when the timer expires. The remaining time is shown on screen."],
+      ["Can I change audio tracks or subtitles?", "Yes! Tap the <strong>settings icon</strong> (⚙️) in the player to access <strong>audio tracks</strong> and <strong>subtitles</strong>. Switch between available languages or enable/disable subtitle tracks."],
+      ["What is Picture-in-Picture (PiP)?", "On <strong>Android</strong>, when you leave the player while a stream is playing, the video automatically continues in a small floating window (PiP). You can continue using other apps while watching."],
+      ["How does channel switching work for Live TV?", "While watching a live channel, <strong>swipe up/down</strong> (or use the channel drawer) to switch between channels in the same category. On <strong>Android TV</strong>, use the D-pad up/down arrows or press right to open the channel drawer."],
+      ["What happens if a stream fails?", "NiPa Player has a <strong>smart retry system</strong>: it automatically retries the stream, then tries alternative stream URLs if available. If all URLs fail, you'll see an error message with a <strong>Retry</strong> button."],
+      ["Does NiPa Player support auto-play for series?", "Yes! When you're near the end of a series episode, a <strong>\"Next Episode\"</strong> overlay appears with a countdown. The next episode starts automatically unless you cancel."]
+    ]},
+    { title: "EPG (TV Guide)", icon: "📡", items: [
+      ["What is the EPG TV Guide?", "The Electronic Program Guide (EPG) shows a <strong>visual timeline</strong> of what's currently playing, what's coming up, and what has aired on your live TV channels — similar to a traditional TV guide grid."],
+      ["How do I access the TV Guide?", "From the Live TV section, tap the <strong>\"TV Guide\"</strong> tab at the top of the screen."],
+      ["Can I set program reminders?", "Yes! Tap any upcoming program in the TV Guide and select <strong>\"Remind Me\"</strong>. You'll receive a push notification when the program is about to start. Reminders work even when the app is closed."],
+      ["Why is the TV Guide empty?", "The EPG data depends on your IPTV provider. If your provider doesn't include EPG data, the TV Guide will show \"No program guide available.\" This is not a NiPa Player issue — contact your provider."]
+    ]},
+    { title: "Favorites", icon: "❤️", items: [
+      ["How do I add something to favorites?", "<strong>Live TV</strong>: Long-press a channel or tap the ❤️ icon.<br><strong>Movies/Series</strong>: On the detail page, tap <strong>\"Add to Favorites\"</strong>."],
+      ["Where can I find my favorites?", "Tap the <strong>\"Favorites\"</strong> section from the main menu. You can filter favorites by type: All, Live TV, Movies, or Series."],
+      ["Are favorites synced across devices?", "Yes, if you are a <strong>Pro subscriber</strong> with <strong>Cloud Sync</strong> enabled. Sign in with Google or Apple, and your favorites will sync across all your devices automatically."]
+    ]},
+    { title: "Chromecast", icon: "📺", items: [
+      ["Does NiPa Player support Chromecast?", "Yes! You can cast live streams and VOD content to any Chromecast-compatible device on your network."],
+      ["How do I cast to my TV?", "1. Make sure your Chromecast device is on the same Wi-Fi network.<br>2. Start playing any stream.<br>3. Tap the <strong>Cast icon</strong> (📺) in the player controls.<br>4. Select your device from the list."],
+      ["How do I stop casting?", "Tap the Cast icon again and select <strong>\"Stop Casting\"</strong>, or tap the mini cast controller at the bottom of the screen.<br><br><em>Note: Chromecast is available on iOS and Android. It is not available on macOS.</em>"]
+    ]},
+    { title: "Cloud Sync", icon: "☁️", items: [
+      ["What is Cloud Sync?", "Cloud Sync is a <strong>Pro feature</strong> that securely synchronizes your playlists and favorites across all your devices using your Google or Apple account. Your data is encrypted with AES-256 using a key derived from your account."],
+      ["How do I enable Cloud Sync?", "1. Go to <strong>Settings > Account & Sync</strong>.<br>2. Sign in with <strong>Google</strong> or <strong>Apple</strong>.<br>3. Tap <strong>\"Sync Now\"</strong> to perform your first sync."],
+      ["What data is synced?", "Playlist configurations (names, credentials, URLs) and favorites (across all playlists)."],
+      ["Is my data encrypted?", "Yes. All sensitive playlist data is encrypted with <strong>AES-256</strong> before being stored in the cloud. The encryption key is derived from your account and never leaves your device."],
+      ["How often does sync happen?", "Sync is triggered manually by tapping <strong>\"Sync Now\"</strong>. There is a 60-second cooldown between syncs to prevent excessive requests."]
+    ]},
+    { title: "Parental Controls", icon: "🔒", items: [
+      ["How do I hide adult content?", "1. Go to <strong>Settings > Parental Controls</strong>.<br>2. Set a <strong>4-digit PIN</strong>.<br>3. Adult categories are automatically detected and hidden behind the PIN lock."],
+      ["How does it detect adult categories?", "NiPa Player automatically scans category names for common adult keywords (18+, adult, xxx, etc.) and hides those categories behind the PIN lock."],
+      ["How do I unlock hidden content?", "When you try to access a locked category, you'll be prompted to enter your 4-digit PIN. The session stays unlocked until you close the app or manually lock it again."],
+      ["Can I change or remove my PIN?", "Yes — go to <strong>Settings > Parental Controls</strong> to change your PIN or disable parental controls entirely."]
+    ]},
+    { title: "Subscription & Trial", icon: "💳", items: [
+      ["How does the free trial work?", "When you first install NiPa Player, you get <strong>7 days of free access</strong> to all features — unlimited playlists, Cloud Sync, all player features, etc. No credit card is required to start the trial."],
+      ["What happens when the trial expires?", "After the trial, you'll need to subscribe to continue using Pro features. Free users can still use the app with limited features (1 playlist, no Cloud Sync)."],
+      ["What subscription plans are available?", "<strong>Monthly</strong> — billed monthly, cancel anytime.<br><strong>Yearly</strong> — billed annually, save ~16% vs monthly.<br><strong>Lifetime</strong> — one-time payment, permanent access."],
+      ["How do I restore my purchase?", "If you reinstall the app or switch devices, go to <strong>Settings > Restore Purchases</strong> to recover your subscription."],
+      ["How do I manage my subscription?", "Go to <strong>Settings > NiPa Player Pro</strong> to view your subscription details. To cancel, manage your subscription through the <strong>App Store</strong> or <strong>Google Play Store</strong> settings on your device."]
+    ]},
+    { title: "Account", icon: "👤", items: [
+      ["Do I need an account to use NiPa Player?", "No. An account is only needed for <strong>Cloud Sync</strong> (Pro feature). You can use all other features without signing in."],
+      ["How do I delete my account?", "Go to <strong>Settings > Account > Delete Account</strong>. This permanently deletes your account and all cloud data. Your local playlists will remain on your device. <a href='delete-account.html'>Learn more</a>."],
+      ["I forgot my password — how do I reset it?", "On the sign-in screen, tap <strong>\"Forgot password?\"</strong> and enter your email. A password reset link will be sent to your inbox."]
+    ]},
+    { title: "Android TV", icon: "🖥️", items: [
+      ["Does NiPa Player work on Android TV?", "Yes! NiPa Player is fully optimized for <strong>Android TV and Google TV</strong> with D-pad navigation. All screens — including the EPG guide, player, and settings — are designed for the TV remote."],
+      ["How do I navigate with the TV remote?", "<strong>D-pad arrows</strong> — navigate between items.<br><strong>Select/OK button</strong> — confirm action (play, open, etc.).<br><strong>Back button</strong> — go back to the previous screen.<br>In the <strong>player</strong>: Up/Down to switch channels, Right to open the channel drawer."]
+    ]},
+    { title: "Troubleshooting", icon: "🛠️", items: [
+      ["Channels won't load — what should I do?", "1. <strong>Check your internet connection.</strong><br>2. <strong>Verify your playlist credentials</strong> — go to Settings, edit your playlist, and re-enter your credentials.<br>3. <strong>Update your playlist</strong> — go to Settings and tap \"Update Playlist\" to re-download channel data.<br>4. <strong>Check your IPTV provider</strong> — the issue may be on their end."],
+      ["The app is slow or buffering a lot.", "Check your internet speed — IPTV streaming requires a stable connection (10+ Mbps recommended). Try switching to a wired connection if on Android TV. Some channels may have higher bitrates that require faster connections."],
+      ["I can't find my channels after updating.", "After updating a playlist, go back to the main menu and navigate to Live TV, Movies, or Series. Your channels should be there organized by categories. Try using <strong>Search</strong> to find specific content."],
+      ["How do I contact support?", "Go to <strong>Settings > Help & Feedback</strong> to send us an email directly from the app. You can also reach us at <a href='mailto:dev@nipaplayer.com'>dev@nipaplayer.com</a>. We typically respond within 24 hours."]
+    ]}
+  ];
+
+  // Render FAQ
+  const container = document.getElementById('faqContainer');
+  faqData.forEach((section, si) => {
+    const sec = document.createElement('div');
+    sec.className = 'faq-section';
+    sec.innerHTML = `<div class="faq-section-title"><span class="faq-section-icon">${section.icon}</span><h2>${section.title}</h2></div>`;
+    section.items.forEach(([q, a], qi) => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      item.innerHTML = `
+        <button class="faq-question" aria-expanded="false" id="faq-${si}-${qi}">
+          <span>${q}</span>
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">${a}</div></div>`;
+      item.querySelector('.faq-question').addEventListener('click', function() {
+        const open = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !open);
+        this.parentElement.classList.toggle('open', !open);
+      });
+      sec.appendChild(item);
+    });
+    container.appendChild(sec);
+  });
+
+  // Search
+  const searchInput = document.getElementById('faqSearch');
+  const noResults = document.getElementById('faqNoResults');
+  searchInput.addEventListener('input', function() {
+    const q = this.value.toLowerCase().trim();
+    let found = 0;
+    document.querySelectorAll('.faq-section').forEach(sec => {
+      let sectionFound = 0;
+      sec.querySelectorAll('.faq-item').forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const match = !q || text.includes(q);
+        item.style.display = match ? '' : 'none';
+        if (match) { sectionFound++; found++; }
+      });
+      sec.style.display = sectionFound ? '' : 'none';
+    });
+    noResults.style.display = found ? 'none' : '';
+  });
+
+  // Mobile nav
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelector('.nav-links');
+  let menuOpen = false;
+  navToggle?.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    navLinks.classList.toggle('nav-menu-open', menuOpen);
+    navToggle.textContent = menuOpen ? '✕' : '☰';
+  });
+  navLinks?.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+    if (menuOpen) { menuOpen = false; navLinks.classList.remove('nav-menu-open'); navToggle.textContent = '☰'; }
+  }));
+  </script>
+
+</body>
+</html>
