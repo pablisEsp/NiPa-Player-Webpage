@@ -329,8 +329,25 @@ img {
 /* ── Store Badges ── */
 .store-badges {
   display: flex;
-  gap: 12px;
-  margin-top: 16px;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.store-badge-link {
+  display: inline-block;
+  transition: transform var(--transition), opacity var(--transition);
+  border-radius: 8px;
+}
+
+.store-badge-link:hover {
+  transform: scale(1.06);
+  opacity: 0.9;
+}
+
+.store-badge-link svg {
+  display: block;
+  border-radius: 8px;
 }
 
 .store-badge {
