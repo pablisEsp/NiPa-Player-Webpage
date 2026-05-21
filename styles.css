@@ -467,19 +467,39 @@ img {
 .bento {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minmax(180px, auto);
+  grid-auto-rows: minmax(140px, auto);
   gap: 16px;
 }
 
 .bento-card {
   position: relative;
-  padding: 28px;
+  padding: 22px 24px;
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius);
   overflow: hidden;
   transition: transform var(--transition), background var(--transition), border-color var(--transition);
   grid-column: span 2;
+}
+
+.bento-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.bento-head .feature-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 1rem;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.bento-head h3 {
+  margin-bottom: 0;
 }
 
 .bento-card::before {
