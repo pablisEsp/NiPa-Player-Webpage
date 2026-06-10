@@ -8,19 +8,61 @@
   <meta name="description"
     content="Stream live TV, movies, and series with NiPa Player. EPG TV guide, Chromecast, cloud sync, and more. Available on iOS, Android, Android TV, and macOS.">
   <meta name="keywords" content="IPTV player, live TV, streaming, Chromecast, EPG, M3U, Xtream Codes, iOS, Android, Android TV, macOS">
+  <link rel="canonical" href="https://www.nipaplayer.com/">
+  <link rel="alternate" hreflang="en" href="https://www.nipaplayer.com/">
+  <link rel="alternate" hreflang="es" href="https://www.nipaplayer.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://www.nipaplayer.com/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="NiPa Player — Premium IPTV Player">
   <meta property="og:description"
     content="Stream live TV, movies, and series. EPG guide, Chromecast, cloud sync, and more.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:url" content="https://www.nipaplayer.com/">
+  <meta property="og:image" content="https://www.nipaplayer.com/assets/icon.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NiPa Player — Premium IPTV Player">
+  <meta name="twitter:description"
+    content="Stream live TV, movies, and series. EPG guide, Chromecast, cloud sync, and more.">
+  <meta name="twitter:image" content="https://www.nipaplayer.com/assets/icon.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png">
 
+  <!-- Fonts (preconnect + non-blocking stylesheet; styles.css no longer @imports them) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NiPa Player",
+    "url": "https://www.nipaplayer.com/",
+    "description": "Premium IPTV player for live TV, movies, and series with EPG TV guide, Chromecast, catch-up TV, and encrypted cloud sync. Bring your own Xtream Codes or M3U playlist.",
+    "operatingSystem": "iOS 15+, Android 7+, Android TV, macOS",
+    "applicationCategory": "MultimediaApplication",
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "0.99",
+      "highPrice": "24.99",
+      "offerCount": "3"
+    },
+    "installUrl": [
+      "https://play.google.com/store/apps/details?id=com.nipaplayer.app",
+      "https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -29,13 +71,14 @@
   <nav class="nav" id="nav">
     <div class="container">
       <a href="/" class="nav-brand">
-        <img src="assets/icon.png" alt="NiPa Player" onerror="this.style.display='none'">
+        <img src="assets/icon-128.png" alt="NiPa Player" width="128" height="128" onerror="this.style.display='none'">
         <span>NiPa Player</span>
       </a>
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#pricing">Pricing</a></li>
+        <li><a href="es/" hreflang="es" lang="es" title="Versión en español">ES</a></li>
         <li><a href="#download" class="nav-cta">Download</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
@@ -73,43 +116,23 @@
         </div>
         <div class="store-badges">
           <a href="https://play.google.com/store/apps/details?id=com.nipaplayer.app" target="_blank" rel="noopener" class="store-badge-link">
-            <svg width="180" height="54" viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="179" height="53" rx="7.5" fill="#000" stroke="#A6A6A6"/>
-              <text x="60" y="16" fill="#fff" font-family="'Inter',sans-serif" font-size="8" font-weight="400" letter-spacing="0.5">GET IT ON</text>
-              <text x="60" y="35" fill="#fff" font-family="'Inter',sans-serif" font-size="17" font-weight="600">Google Play</text>
-              <!-- Play Store triangle icon -->
-              <g transform="translate(14, 9)">
-                <defs>
-                  <linearGradient id="gp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00C3FF"/><stop offset="100%" stop-color="#1B6EF3"/></linearGradient>
-                  <linearGradient id="gp2" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#00F076"/><stop offset="100%" stop-color="#00C3FF"/></linearGradient>
-                  <linearGradient id="gp3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFD400"/><stop offset="100%" stop-color="#FF3B30"/></linearGradient>
-                  <linearGradient id="gp4" x1="1" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#FF3B30"/><stop offset="100%" stop-color="#FF60A8"/></linearGradient>
-                </defs>
-                <path d="M2 2.5C1.4 3.2 1 4.2 1 5.5V30.5C1 31.8 1.4 32.8 2 33.5L2.2 33.7L16.5 19.4V18V18.6L2.2 4.3L2 2.5Z" fill="url(#gp1)"/>
-                <path d="M21.2 24.2L16.5 19.5V18.5L21.2 13.8L21.4 13.9L27 17.1C28.6 18 28.6 19.9 27 20.9L21.4 24.1L21.2 24.2Z" fill="url(#gp2)"/>
-                <path d="M21.4 24.1L16.5 19.2L2 33.5C2.6 34.2 3.6 34.3 4.7 33.6L21.4 24.1Z" fill="url(#gp3)"/>
-                <path d="M21.4 13.9L4.7 4.4C3.6 3.7 2.6 3.8 2 4.5L16.5 18.8L21.4 13.9Z" fill="url(#gp4)"/>
-              </g>
-            </svg>
+            <img src="assets/badges/google-play-en.png" alt="Get it on Google Play" class="badge-gplay"
+              width="646" height="250">
           </a>
           <a href="https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773" target="_blank" rel="noopener" class="store-badge-link">
-            <svg width="180" height="54" viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" y="0.5" width="179" height="53" rx="7.5" fill="#000" stroke="#A6A6A6"/>
-              <text x="52" y="16" fill="#fff" font-family="'Inter',sans-serif" font-size="8" font-weight="400" letter-spacing="0.3">Download on the</text>
-              <text x="52" y="35" fill="#fff" font-family="'Inter',sans-serif" font-size="18" font-weight="600">App Store</text>
-              <!-- Apple icon -->
-              <g transform="translate(0, 9.5) scale(1.6)" fill="#fff">
-                <path d="M22.2 11.7c-.1-2.3 1.9-3.4 2-3.5-1.1-1.6-2.7-1.8-3.3-1.9-1.4-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.8 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-.9 2.8-2.2c.9-1.3 1.3-2.5 1.3-2.5 0 0-2.4-1-2.5-3.5z"/>
-                <path d="M19.8 4.5c.6-.8 1-1.8.9-2.9-1 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.6 2.9-1.4z"/>
-              </g>
-            </svg>
+            <img src="assets/badges/app-store-en.svg" alt="Download on the App Store" class="badge-appstore"
+              width="120" height="40">
           </a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="phone-mockup">
           <div class="glow"></div>
-          <img src="assets/001 Home.png" alt="NiPa Player app screenshot" class="phone-frame">
+          <picture>
+            <source srcset="assets/001-home.avif" type="image/avif">
+            <img src="assets/001-home.png" alt="NiPa Player app screenshot" class="phone-frame"
+              width="600" height="1304" fetchpriority="high" decoding="async">
+          </picture>
         </div>
       </div>
     </div>
@@ -237,28 +260,52 @@
     </div>
     <div class="screenshots-scroll" id="screenshotsScroll">
       <div class="screenshot-item">
-        <img src="assets/001 Home.png" alt="Home screen">
+        <picture>
+          <source srcset="assets/001-home.avif" type="image/avif">
+          <img src="assets/001-home.png" alt="Home screen" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/002 Channels.png" alt="Channels">
+        <picture>
+          <source srcset="assets/002-channels.avif" type="image/avif">
+          <img src="assets/002-channels.png" alt="Channels" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/003 EPG Guide.png" alt="EPG TV Guide">
+        <picture>
+          <source srcset="assets/003-epg-guide.avif" type="image/avif">
+          <img src="assets/003-epg-guide.png" alt="EPG TV Guide" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item landscape">
-        <img src="assets/004 Player.png" alt="Video player">
+        <picture>
+          <source srcset="assets/004-player.avif" type="image/avif">
+          <img src="assets/004-player.png" alt="Video player" width="960" height="441" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/005 Chromecast.png" alt="Chromecast">
+        <picture>
+          <source srcset="assets/005-chromecast.avif" type="image/avif">
+          <img src="assets/005-chromecast.png" alt="Chromecast" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/006 Multiview.png" alt="Multiview">
+        <picture>
+          <source srcset="assets/006-multiview.avif" type="image/avif">
+          <img src="assets/006-multiview.png" alt="Multiview" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/007 Add Playlist.png" alt="Add Playlist">
+        <picture>
+          <source srcset="assets/007-add-playlist.avif" type="image/avif">
+          <img src="assets/007-add-playlist.png" alt="Add Playlist" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="screenshot-item">
-        <img src="assets/008 Settings.png" alt="Settings">
+        <picture>
+          <source srcset="assets/008-settings.avif" type="image/avif">
+          <img src="assets/008-settings.png" alt="Settings" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
       </div>
     </div>
   </section>
@@ -347,20 +394,14 @@
     <div class="container">
       <h2>Ready to start streaming?</h2>
       <p>Download NiPa Player today and enjoy 21 days of full access for free.</p>
-      <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.nipaplayer.app" target="_blank" rel="noopener" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zM14.513 12.72l2.89 2.89-9.293 5.31 6.403-8.2zm4.213-1.453l1.857 1.062c.35.2.566.572.566.978 0 .406-.216.778-.566.978l-1.857 1.062-3.125-3.04 3.125-3.04zM8.11 3.894l9.293 5.31-2.89 2.89-6.403-8.2z" />
-          </svg>
-          Google Play
+      <div class="cta-buttons store-badges" style="justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.nipaplayer.app" target="_blank" rel="noopener" class="store-badge-link">
+          <img src="assets/badges/google-play-en.png" alt="Get it on Google Play" class="badge-gplay"
+            width="646" height="250" loading="lazy">
         </a>
-        <a href="https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773" target="_blank" rel="noopener" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-          </svg>
-          App Store
+        <a href="https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773" target="_blank" rel="noopener" class="store-badge-link">
+          <img src="assets/badges/app-store-en.svg" alt="Download on the App Store" class="badge-appstore"
+            width="120" height="40" loading="lazy">
         </a>
       </div>
     </div>
@@ -372,8 +413,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="nav-brand">
-            <img src="assets/icon.png" alt="NiPa Player" width="32" height="32" style="border-radius: 8px;"
-              onerror="this.style.display='none'">
+            <img src="assets/icon-128.png" alt="NiPa Player" width="32" height="32" style="border-radius: 8px;"
+              loading="lazy" onerror="this.style.display='none'">
             <span>NiPa Player</span>
           </a>
           <p>Premium IPTV streaming for iOS, Android, Android TV, and macOS. Built with ❤️ by NiPa Studio.</p>

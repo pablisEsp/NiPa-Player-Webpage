@@ -3,8 +3,9 @@
    Modern dark theme with glassmorphism & smooth animations
    ═══════════════════════════════════════════════════════════ */
 
-/* ── Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* ── Fonts ──
+   Inter is loaded via <link rel="stylesheet"> in each page's <head>
+   (with preconnect) instead of a render-blocking CSS @import. */
 
 /* ── Reset & Base ── */
 *,
@@ -348,6 +349,22 @@ img {
 .store-badge-link svg {
   display: block;
   border-radius: 8px;
+}
+
+/* Official store badge artwork. Apple's SVG has no padding (54px tall);
+   Google's PNG ships with built-in clear space, so it renders at 80px with
+   negative margins to visually match the Apple badge height. */
+.store-badge-link .badge-appstore {
+  display: block;
+  height: 54px;
+  width: auto;
+}
+
+.store-badge-link .badge-gplay {
+  display: block;
+  height: 80px;
+  width: auto;
+  margin: -13px;
 }
 
 .store-badge {
