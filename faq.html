@@ -78,15 +78,15 @@
   // FAQ Data
   const faqData = [
     { title: "General", icon: "💡", items: [
-      ["What is NiPa Player?", "NiPa Player is a premium IPTV media player for iOS, Android, Android TV, and macOS. It lets you stream Live TV, Movies, and Series from your own IPTV provider. NiPa Player does not provide, host, or stream any content — you bring your own playlists."],
-      ["What platforms does NiPa Player support?", "<strong>iPhone & iPad</strong> (iOS 15+), <strong>Android phones & tablets</strong> (Android 7+), <strong>Android TV / Google TV</strong>, and <strong>macOS</strong> (Apple Silicon & Intel)."],
+      ["What is NiPa Player?", "NiPa Player is a premium IPTV media player for iOS, Android, and Android TV. It lets you stream Live TV, Movies, and Series from your own IPTV provider. NiPa Player does not provide, host, or stream any content — you bring your own playlists."],
+      ["What platforms does NiPa Player support?", "<strong>3 platforms</strong>: <strong>iPhone & iPad</strong> (iOS 15+), <strong>Android phones & tablets</strong> (Android 7+), and <strong>Android TV / Google TV</strong>."],
       ["Is NiPa Player free?", "NiPa Player offers a <strong>21-day free trial</strong> with full access to all features. After the trial, a subscription (monthly, yearly, or lifetime) is required."],
-      ["What languages does NiPa Player support?", "The app is available in <strong>22 languages</strong>: English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Hindi, Arabic, Bengali, Turkish, Polish, Dutch, Indonesian, Swedish, Norwegian, Vietnamese, Thai, and Urdu."]
+      ["What languages does NiPa Player support?", "The app is available in <strong>28 languages</strong>: English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Hindi, Arabic, Bengali, Turkish, Polish, Dutch, Indonesian, Malay, Swedish, Norwegian, Danish, Finnish, Vietnamese, Thai, Urdu, Hungarian, Serbian, and Albanian."]
     ]},
     { title: "Playlists", icon: "📋", items: [
       ["What playlist formats are supported?", "NiPa Player supports three formats:<br>1. <strong>Xtream Codes</strong> — Enter your server URL, username, and password.<br>2. <strong>M3U URL</strong> — Paste a direct link to an M3U or M3U8 playlist file.<br>3. <strong>M3U File</strong> — Import a local .m3u or .m3u8 file from your device (mobile only)."],
       ["How do I add a playlist?", "1. Open the app and tap <strong>\"Add Playlist\"</strong>.<br>2. Choose the format tab (Xtream Codes, M3U URL, or M3U File).<br>3. Enter a name and the required credentials or URL.<br>4. Tap <strong>\"Add Playlist\"</strong> — the app will validate your credentials and load the content."],
-      ["Can I have multiple playlists?", "Yes! <strong>Pro subscribers</strong> can add unlimited playlists. Free users are limited to 1 playlist. You can switch between playlists from <strong>Settings > All Playlists</strong>."],
+      ["Can I have multiple playlists?", "Yes! You can add <strong>unlimited playlists</strong> and switch between them from <strong>Settings > All Playlists</strong>."],
       ["How do I switch between playlists?", "Go to <strong>Settings > All Playlists</strong> and tap the playlist you want to use. Tap <strong>\"Set as Active\"</strong> to switch."],
       ["How do I update my playlist?", "Go to <strong>Settings</strong>, find your playlist, and tap <strong>\"Update Playlist\"</strong>. This will re-download all channels and categories from the server."],
       ["My playlist shows \"Expired\" — what should I do?", "This means your IPTV subscription with your provider has expired. Contact your IPTV service provider to renew your credentials."],
@@ -120,7 +120,7 @@
     { title: "Favorites", icon: "❤️", items: [
       ["How do I add something to favorites?", "<strong>Live TV</strong>: Long-press a channel or tap the ❤️ icon.<br><strong>Movies/Series</strong>: On the detail page, tap <strong>\"Add to Favorites\"</strong>."],
       ["Where can I find my favorites?", "Tap the <strong>\"Favorites\"</strong> section from the main menu. You can filter favorites by type: All, Live TV, Movies, or Series."],
-      ["Are favorites synced across devices?", "Yes, if you are a <strong>Pro subscriber</strong> with <strong>Cloud Sync</strong> enabled. Sign in with Google or Apple, and your favorites will sync across all your devices automatically."]
+      ["Are favorites synced across devices?", "Yes, with <strong>Cloud Sync</strong>. Sign in with Google or Apple, and your favorites will sync across all your devices automatically."]
     ]},
     { title: "Chromecast", icon: "📺", items: [
       ["Does NiPa Player support Chromecast?", "Yes! You can cast live streams and VOD content to any Chromecast-compatible device on your network."],
@@ -128,7 +128,7 @@
       ["How do I stop casting?", "Tap the Cast icon again and select <strong>\"Stop Casting\"</strong>, or tap the mini cast controller at the bottom of the screen.<br><br><em>Note: Chromecast is available on iOS and Android. It is not available on macOS.</em>"]
     ]},
     { title: "Cloud Sync", icon: "☁️", items: [
-      ["What is Cloud Sync?", "Cloud Sync is a <strong>Pro feature</strong> that securely synchronizes your playlists and favorites across all your devices using your Google or Apple account. Your data is encrypted with AES-256 using a key derived from your account."],
+      ["What is Cloud Sync?", "Cloud Sync securely synchronizes your playlists and favorites across all your devices using your Google or Apple account. Your data is encrypted with AES-256 using a key derived from your account."],
       ["How do I enable Cloud Sync?", "1. Go to <strong>Settings > Account & Sync</strong>.<br>2. Sign in with <strong>Google</strong> or <strong>Apple</strong>.<br>3. Tap <strong>\"Sync Now\"</strong> to perform your first sync."],
       ["What data is synced?", "Playlist configurations (names, credentials, URLs) and favorites (across all playlists)."],
       ["Is my data encrypted?", "Yes. All sensitive playlist data is encrypted with <strong>AES-256</strong> before being stored in the cloud. The encryption key is derived from your account and never leaves your device."],
@@ -148,7 +148,7 @@
       ["How do I manage my subscription?", "Go to <strong>Settings > NiPa Player Pro</strong> to view your subscription details. To cancel, manage your subscription through the <strong>App Store</strong> or <strong>Google Play Store</strong> settings on your device."]
     ]},
     { title: "Account", icon: "👤", items: [
-      ["Do I need an account to use NiPa Player?", "No. An account is only needed for <strong>Cloud Sync</strong> (Pro feature). You can use all other features without signing in."],
+      ["Do I need an account to use NiPa Player?", "No. An account is only needed for <strong>Cloud Sync</strong>. You can use all other features without signing in."],
       ["How do I delete my account?", "Go to <strong>Settings > Account > Delete Account</strong>. This permanently deletes your account and all cloud data. Your local playlists will remain on your device. <a href='delete-account.html'>Learn more</a>."],
       ["I forgot my password — how do I reset it?", "On the sign-in screen, tap <strong>\"Forgot password?\"</strong> and enter your email. A password reset link will be sent to your inbox."]
     ]},
