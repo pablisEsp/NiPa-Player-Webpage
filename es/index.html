@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NiPa Player — Reproductor IPTV premium para iOS, Android y Android TV</title>
+  <meta name="description"
+    content="Ve TV en directo, películas y series con NiPa Player. Guía EPG, Chromecast, sincronización en la nube y más. Disponible en iOS, Android, Android TV y macOS.">
+  <meta name="keywords" content="reproductor IPTV, TV en directo, streaming, Chromecast, EPG, M3U, Xtream Codes, iOS, Android, Android TV, macOS">
+  <link rel="canonical" href="https://www.nipaplayer.com/es/">
+  <link rel="alternate" hreflang="en" href="https://www.nipaplayer.com/">
+  <link rel="alternate" hreflang="es" href="https://www.nipaplayer.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://www.nipaplayer.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NiPa Player — Reproductor IPTV premium">
+  <meta property="og:description"
+    content="Ve TV en directo, películas y series. Guía EPG, Chromecast, sincronización en la nube y más.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nipaplayer.com/es/">
+  <meta property="og:image" content="https://www.nipaplayer.com/assets/icon.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NiPa Player — Reproductor IPTV premium">
+  <meta name="twitter:description"
+    content="Ve TV en directo, películas y series. Guía EPG, Chromecast, sincronización en la nube y más.">
+  <meta name="twitter:image" content="https://www.nipaplayer.com/assets/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+  <!-- Fonts (preconnect + non-blocking stylesheet; styles.css no longer @imports them) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NiPa Player",
+    "url": "https://www.nipaplayer.com/es/",
+    "inLanguage": "es",
+    "description": "Reproductor IPTV premium para TV en directo, películas y series con guía EPG, Chromecast, catch-up y sincronización cifrada en la nube. Trae tu propia lista Xtream Codes o M3U.",
+    "operatingSystem": "iOS 15+, Android 7+, Android TV, macOS",
+    "applicationCategory": "MultimediaApplication",
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "0.99",
+      "highPrice": "24.99",
+      "offerCount": "3"
+    },
+    "installUrl": [
+      "https://play.google.com/store/apps/details?id=com.nipaplayer.app",
+      "https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════ Navigation ═══════════ -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="./" class="nav-brand">
+        <img src="../assets/icon-128.png" alt="NiPa Player" width="128" height="128" onerror="this.style.display='none'">
+        <span>NiPa Player</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Funciones</a></li>
+        <li><a href="#screenshots">Capturas</a></li>
+        <li><a href="#pricing">Precios</a></li>
+        <li><a href="../" hreflang="en" lang="en" title="English version">EN</a></li>
+        <li><a href="#download" class="nav-cta">Descargar</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">☰</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ Hero ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponible en iOS, Android, Android TV y macOS
+        </div>
+        <h1>
+          Tu contenido.<br>
+          <span class="gradient-text">Cuando y donde quieras.</span>
+        </h1>
+        <p>
+          NiPa Player es la app de streaming IPTV premium. Ve TV en directo, películas y series con una
+          interfaz espectacular, guía EPG completa, soporte Chromecast y sincronización en la nube entre
+          todos tus dispositivos.
+        </p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Descargar gratis
+          </a>
+          <a href="#features" class="btn-secondary">
+            Descubre las funciones
+          </a>
+        </div>
+        <div class="store-badges">
+          <a href="https://play.google.com/store/apps/details?id=com.nipaplayer.app" target="_blank" rel="noopener" class="store-badge-link">
+            <img src="../assets/badges/google-play-es.png" alt="Disponible en Google Play" class="badge-gplay"
+              width="646" height="250">
+          </a>
+          <a href="https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773" target="_blank" rel="noopener" class="store-badge-link">
+            <img src="../assets/badges/app-store-es.svg" alt="Descárgalo en el App Store" class="badge-appstore"
+              width="120" height="40">
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="glow"></div>
+          <picture>
+            <source srcset="../assets/001-home.avif" type="image/avif">
+            <img src="../assets/001-home.png" alt="Captura de pantalla de NiPa Player" class="phone-frame"
+              width="600" height="1304" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Features ═══════════ -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">Funciones</span>
+        <h2>Todo lo que necesitas para tu streaming</h2>
+        <p>Hecho para amantes del IPTV que esperan una experiencia premium sin concesiones.</p>
+      </div>
+
+      <div class="bento">
+
+        <!-- Hero card: Live TV + Movies + Series -->
+        <div class="bento-card bento-hero animate-on-scroll">
+          <div class="bento-hero-content">
+            <span class="bento-tag">Todo en uno</span>
+            <h3>TV en directo, películas y series</h3>
+            <p>Soporte Xtream Codes y M3U. Trae tu propia lista y disfruta de canales en directo, películas bajo demanda y series completas — todo en una app cuidada al detalle.</p>
+            <div class="bento-chips">
+              <span class="bento-chip">📺 TV en directo</span>
+              <span class="bento-chip">🎬 Películas</span>
+              <span class="bento-chip">📼 Series</span>
+            </div>
+          </div>
+          <div class="bento-hero-glow"></div>
+        </div>
+
+        <!-- EPG -->
+        <div class="bento-card bento-sm animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">📡</span>
+            <h3>Guía EPG</h3>
+          </div>
+          <p>Línea de tiempo interactiva. Ve qué se emite ahora y después, y crea recordatorios de programas.</p>
+        </div>
+
+        <!-- Cloud Sync -->
+        <div class="bento-card bento-sm bento-accent animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">☁️</span>
+            <h3>Cloud Sync</h3>
+          </div>
+          <p>Listas, favoritos y ajustes sincronizados entre todos tus dispositivos.</p>
+        </div>
+
+        <!-- Catch-up TV (wide) -->
+        <div class="bento-card bento-md animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">⏪</span>
+            <h3>Catch-up TV</h3>
+          </div>
+          <p>Rebobina al pasado y ve programas ya emitidos — navega por canal o categoría (si tu proveedor lo soporta).</p>
+        </div>
+
+        <!-- Chromecast (wide) -->
+        <div class="bento-card bento-md animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">📱</span>
+            <h3>Chromecast</h3>
+          </div>
+          <p>Envía TV en directo y contenido bajo demanda a cualquier TV con Chromecast. Controla la reproducción desde tu móvil.</p>
+        </div>
+
+        <!-- Picture-in-Picture -->
+        <div class="bento-card bento-sm animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">🖼️</span>
+            <h3>Picture-in-Picture</h3>
+          </div>
+          <p>Sigue viendo en una ventana flotante mientras haces otras cosas. <span class="bento-note">Solo Android.</span></p>
+        </div>
+
+        <!-- Parental Controls -->
+        <div class="bento-card bento-sm animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">🔒</span>
+            <h3>Control parental</h3>
+          </div>
+          <p>Bloqueo con PIN y detección automática de categorías de adultos.</p>
+        </div>
+
+        <!-- Sleep Timer + Auto-Play -->
+        <div class="bento-card bento-sm animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">⏱️</span>
+            <h3>Temporizador y auto-play</h3>
+          </div>
+          <p>Pausa automática tras un tiempo. Las series avanzan solas al siguiente episodio.</p>
+        </div>
+
+        <!-- Powerful Engine (wide) -->
+        <div class="bento-card bento-md animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">⚡</span>
+            <h3>Motor potente</h3>
+          </div>
+          <p>Construido sobre FFmpeg para máxima compatibilidad de códecs. Streaming adaptativo, búfer inteligente, reintento automático con URLs alternativas, y gestos para brillo, volumen y avance.</p>
+        </div>
+
+        <!-- 28 Languages -->
+        <div class="bento-card bento-sm animate-on-scroll">
+          <div class="bento-head">
+            <span class="feature-icon">🌍</span>
+            <h3>28 idiomas</h3>
+          </div>
+          <p>Del español y el inglés al japonés, árabe, hindi y muchos más.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Screenshots ═══════════ -->
+  <section class="section" id="screenshots">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">Capturas</span>
+        <h2>Así es por dentro</h2>
+        <p>Una interfaz cuidada al detalle, diseñada para la mejor experiencia de streaming.</p>
+      </div>
+    </div>
+    <div class="screenshots-scroll" id="screenshotsScroll">
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/001-home.avif" type="image/avif">
+          <img src="../assets/001-home.png" alt="Pantalla de inicio" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/002-channels.avif" type="image/avif">
+          <img src="../assets/002-channels.png" alt="Canales" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/003-epg-guide.avif" type="image/avif">
+          <img src="../assets/003-epg-guide.png" alt="Guía EPG" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item landscape">
+        <picture>
+          <source srcset="../assets/004-player.avif" type="image/avif">
+          <img src="../assets/004-player.png" alt="Reproductor de vídeo" width="960" height="441" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/005-chromecast.avif" type="image/avif">
+          <img src="../assets/005-chromecast.png" alt="Chromecast" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/006-multiview.avif" type="image/avif">
+          <img src="../assets/006-multiview.png" alt="Multivisión" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/007-add-playlist.avif" type="image/avif">
+          <img src="../assets/007-add-playlist.png" alt="Añadir lista" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="screenshot-item">
+        <picture>
+          <source srcset="../assets/008-settings.avif" type="image/avif">
+          <img src="../assets/008-settings.png" alt="Ajustes" width="600" height="1304" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Stats ═══════════ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Plataformas</div>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number">28</div>
+          <div class="stat-label">Idiomas</div>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Canales</div>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Streaming</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Pricing ═══════════ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">Precios</span>
+        <h2>Empieza gratis, suscríbete cuando quieras</h2>
+        <p>Prueba NiPa Player gratis durante 21 días con todas las funciones desbloqueadas. Después, elige el plan que mejor te encaje.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-title">Mensual</div>
+          <div class="pricing-price">0,99 $</div>
+          <div class="pricing-period">al mes + IVA</div>
+          <ul class="pricing-features">
+            <li>Todas las funciones incluidas</li>
+            <li>Listas ilimitadas</li>
+            <li>Guía EPG y recordatorios</li>
+            <li>Soporte Chromecast</li>
+            <li>Sincronización en la nube</li>
+          </ul>
+          <a href="#download" class="btn-secondary" style="width: 100%; justify-content: center;">Empezar prueba gratis</a>
+        </div>
+
+        <div class="pricing-card featured animate-on-scroll">
+          <div class="pricing-title">Anual</div>
+          <div class="pricing-price">9,99 $</div>
+          <div class="pricing-period">al año + IVA — ahorra un 16%</div>
+          <ul class="pricing-features">
+            <li>Todo lo del plan mensual</li>
+            <li>La mejor relación calidad-precio</li>
+            <li>Soporte prioritario</li>
+            <li>Todas las funciones futuras</li>
+            <li>Cancela cuando quieras</li>
+          </ul>
+          <a href="#download" class="btn-primary" style="width: 100%; justify-content: center;">Empezar prueba gratis</a>
+        </div>
+
+        <div class="pricing-card animate-on-scroll">
+          <div class="pricing-title">Vitalicio</div>
+          <div class="pricing-price">24,99 $</div>
+          <div class="pricing-period">pago único + IVA</div>
+          <ul class="pricing-features">
+            <li>Todo incluido, para siempre</li>
+            <li>Sin pagos recurrentes</li>
+            <li>Soporte prioritario</li>
+            <li>Todas las funciones futuras</li>
+            <li>Ideal a largo plazo</li>
+          </ul>
+          <a href="#download" class="btn-secondary" style="width: 100%; justify-content: center;">Empezar prueba gratis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta-section section-alt" id="download">
+    <div class="container">
+      <h2>¿Listo para empezar?</h2>
+      <p>Descarga NiPa Player hoy y disfruta de 21 días de acceso completo gratis.</p>
+      <div class="cta-buttons store-badges" style="justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.nipaplayer.app" target="_blank" rel="noopener" class="store-badge-link">
+          <img src="../assets/badges/google-play-es.png" alt="Disponible en Google Play" class="badge-gplay"
+            width="646" height="250" loading="lazy">
+        </a>
+        <a href="https://apps.apple.com/es/app/nipa-player-iptv-m3u/id6760720773" target="_blank" rel="noopener" class="store-badge-link">
+          <img src="../assets/badges/app-store-es.svg" alt="Descárgalo en el App Store" class="badge-appstore"
+            width="120" height="40" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Footer ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./" class="nav-brand">
+            <img src="../assets/icon-128.png" alt="NiPa Player" width="32" height="32" style="border-radius: 8px;"
+              loading="lazy" onerror="this.style.display='none'">
+            <span>NiPa Player</span>
+          </a>
+          <p>Streaming IPTV premium para iOS, Android, Android TV y macOS. Hecho con ❤️ por NiPa Studio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="#features">Funciones</a></li>
+            <li><a href="#pricing">Precios</a></li>
+            <li><a href="#screenshots">Capturas</a></li>
+            <li><a href="#download">Descargar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+            <li><a href="../terms.html">Términos del servicio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="faq.html">Preguntas frecuentes</a></li>
+            <li><a href="mailto:dev@nipaplayer.com">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 NiPa Studio. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ Scripts ═══════════ -->
+  <script>
+    // Navbar scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Scroll animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger animation for grid items
+          const delay = entry.target.dataset.delay || 0;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.animate-on-scroll').forEach((el, i) => {
+      // Add stagger delay for items in grids
+      const parent = el.parentElement;
+      if (parent && (parent.classList.contains('features-grid') || parent.classList.contains('bento') || parent.classList.contains('stats-row') || parent.classList.contains('pricing-grid'))) {
+        const siblings = Array.from(parent.children).filter(c => c.classList.contains('animate-on-scroll'));
+        el.dataset.delay = siblings.indexOf(el) * 100;
+      }
+      observer.observe(el);
+    });
+
+    // Mobile nav toggle — fullscreen menu
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    let menuOpen = false;
+
+    navToggle?.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        navLinks.classList.add('nav-menu-open');
+        navToggle.textContent = '✕';
+      } else {
+        navLinks.classList.remove('nav-menu-open');
+        navToggle.textContent = '☰';
+      }
+    });
+
+    // Close mobile nav on link click
+    navLinks?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (menuOpen) {
+          menuOpen = false;
+          navLinks.classList.remove('nav-menu-open');
+          navToggle.textContent = '☰';
+        }
+      });
+    });
+
+    // Close mobile menu on resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && menuOpen) {
+        menuOpen = false;
+        navLinks.classList.remove('nav-menu-open');
+        navToggle.textContent = '☰';
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
