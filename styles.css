@@ -120,6 +120,28 @@ img {
   border-radius: 0;
 }
 
+/* ── Inline SVG icons (replace emojis) ── */
+.feature-icon svg,
+.faq-section-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--accent-light);
+}
+
+.bento-chip svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent-light);
+  flex-shrink: 0;
+}
+
+.icon-inline {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  color: var(--accent-light);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
