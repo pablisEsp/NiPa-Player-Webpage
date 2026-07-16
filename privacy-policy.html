@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — NiPa Player</title>
     <meta name="description" content="NiPa Player privacy policy. Learn how we handle your data.">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0a0a0f">
     <link rel="canonical" href="https://www.nipaplayer.com/privacy-policy.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +27,7 @@
     <nav class="nav scrolled">
         <div class="container">
             <a href="/" class="nav-brand">
-                <img src="assets/icon-128.png" alt="NiPa Player" onerror="this.style.display='none'">
-                <span>NiPa Player</span>
+                <img src="/assets/wordmark.svg" alt="NiPa Player" class="nav-wordmark" height="44">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
@@ -41,13 +46,13 @@
         <div class="container">
             <div class="legal-content">
                 <h1>Privacy Policy</h1>
-                <p class="last-updated">Last updated: March 30, 2026</p>
+                <p class="last-updated">Last updated: July 16, 2026</p>
 
-                <p>NiPa Studio ("we", "our", or "us") operates the NiPa Player mobile application (the "App"). This
-                    Privacy Policy explains how we collect, use, store, and protect your personal data when you use our
-                    App, in accordance with the General Data Protection Regulation (EU) 2016/679 ("GDPR"), the Spanish
-                    Organic Law 3/2018 on the Protection of Personal Data and Guarantee of Digital Rights
-                    ("LOPDGDD"), and other applicable data protection legislation.</p>
+                <p>NiPa Studio ("we", "our", or "us") operates the NiPa Player application for iOS, Android, Android TV,
+                    and macOS (the "App"). This Privacy Policy explains how we collect, use, store, and protect your
+                    personal data when you use our App, in accordance with the General Data Protection Regulation (EU)
+                    2016/679 ("GDPR"), the Spanish Organic Law 3/2018 on the Protection of Personal Data and Guarantee
+                    of Digital Rights ("LOPDGDD"), and other applicable data protection legislation.</p>
 
                 <p>By using the App, you acknowledge that you have read and understood this Privacy Policy. If you do
                     not agree with our data practices, please do not use the App.</p>
@@ -75,55 +80,95 @@
                 <h2>2. Information We Collect</h2>
 
                 <p>We apply the principle of <strong>data minimization</strong> — we only collect data that is strictly
-                    necessary for the App to function. Below is a detailed breakdown:</p>
+                    necessary for the App to function. The App contains <strong>no advertising and no analytics or
+                    marketing trackers</strong>. Below is a detailed breakdown:</p>
 
                 <p><strong>a) Account Information (optional — only if you create an account):</strong></p>
+                <p>Creating an account is optional and is only required if you want cloud sync across your devices. You
+                    can sign in using any of the following methods:</p>
                 <ul>
-                    <li>Email address — used for authentication and account recovery</li>
-                    <li>Hashed password — your password is never stored in plain text; Firebase Authentication
-                        handles credential security using industry-standard hashing algorithms</li>
+                    <li><strong>Email and password</strong> — we store your email address for authentication and
+                        account recovery. Your password is never stored in plain text; Firebase Authentication handles
+                        credential security using industry-standard hashing algorithms</li>
+                    <li><strong>Google Sign-In</strong> — we receive your email address and basic profile information
+                        (name) from your Google account, as authorized by you during sign-in</li>
+                    <li><strong>Sign in with Apple</strong> — we receive the email address you choose to share. If you
+                        use Apple's "Hide My Email" feature, we only receive the anonymized relay address, never your
+                        real one</li>
                 </ul>
 
-                <p><strong>b) Subscription Data:</strong></p>
-                <p>If you subscribe to NiPa Player Pro, all payment processing is handled entirely by Apple (App Store)
+                <p><strong>b) User Profiles:</strong></p>
+                <p>The App lets you create up to 5 viewing profiles (including kids profiles) to keep favorites,
+                    viewing history, and playback progress separate for each member of your household. Profile data
+                    consists of:</p>
+                <ul>
+                    <li>Profile name and chosen avatar (you may use any name — real names are not required)</li>
+                    <li>Per-profile favorites, viewing history, and playback progress ("continue watching")</li>
+                </ul>
+                <p>This data is stored <strong>locally on your device</strong>. If you sign in to an account, it is
+                    additionally synced to your account so it is available on your other devices.</p>
+
+                <p><strong>c) Subscription Data:</strong></p>
+                <p>If you subscribe to NiPa Player, all payment processing is handled entirely by Apple (App Store)
                     or Google (Google Play). <strong>We never collect, access, or store</strong> your payment
                     information (credit card numbers, billing addresses, bank details, etc.). We only receive a
                     confirmation of your subscription status (active/inactive/expired) through RevenueCat, our
                     subscription management service.</p>
 
-                <p><strong>c) User-Provided Content:</strong></p>
+                <p><strong>d) Device Identifier (free trial management):</strong></p>
+                <p>To offer a free trial and prevent its abuse (e.g., repeatedly reinstalling the App to restart the
+                    trial), we process a <strong>pseudonymous device identifier</strong>:</p>
+                <ul>
+                    <li>On Android: the <code>ANDROID_ID</code> value provided by the operating system</li>
+                    <li>On Apple devices: the <code>identifierForVendor</code> value provided by the operating
+                        system</li>
+                </ul>
+                <p>This identifier is stored together with the trial start date on our servers. It is <strong>not the
+                    advertising identifier</strong> (we never access IDFA/AAID), it cannot be used to identify you
+                    personally, and it is used exclusively to enforce the one-trial-per-device policy — never for
+                    advertising, tracking, or profiling.</p>
+
+                <p><strong>e) User-Provided Content (playlists):</strong></p>
                 <p>The App allows you to add your own IPTV playlists (M3U URLs or Xtream Codes API credentials). This
                     data is:</p>
                 <ul>
                     <li>Stored <strong>locally on your device</strong> by default, <strong>encrypted at rest</strong>
                         using AES-256. The encryption key is stored securely in the device's native keychain
-                        (Keychain on iOS, EncryptedSharedPreferences on Android)</li>
-                    <li>If you voluntarily enable Cloud Sync, your playlist data is synced to your account on Cloud
+                        (Keychain on iOS/macOS, EncryptedSharedPreferences on Android)</li>
+                    <li>If you sign in to an account, your playlist data is synced to your account on Cloud
                         Firestore, protected by Firebase Security Rules and encrypted in transit (TLS) and at rest</li>
                     <li>We <strong>do not monitor, access, inspect, or control</strong> the content of your playlists or
                         the streams you access</li>
                 </ul>
 
-                <p><strong>d) Crash Data:</strong></p>
+                <p><strong>f) Offline Downloads:</strong></p>
+                <p>If the download feature is available on your platform, media you download for offline viewing is
+                    stored <strong>exclusively on your device</strong>, inside the App's private sandbox. Downloaded
+                    files are <strong>never uploaded to our servers</strong>, are excluded from cloud device backups,
+                    and are removed when you delete them or uninstall the App. We have no knowledge of, or access to,
+                    what you download.</p>
+
+                <p><strong>g) Crash Data:</strong></p>
                 <p>We use <strong>Firebase Crashlytics</strong> (Google LLC) to collect anonymous crash reports. This
-                    data includes device model, OS version, and stack traces. It <strong>does not identify you
-                    personally</strong> and is used solely to fix bugs and improve app stability.</p>
+                    data includes device model, OS version, and stack traces. Before any crash report is sent, the App
+                    <strong>automatically scrubs playlist URLs and credentials</strong> from it. Crash data does not
+                    identify you personally and is used solely to fix bugs and improve app stability.</p>
 
-                <p><strong>e) Technical and Diagnostic Data:</strong></p>
-                <p>We may collect anonymous, aggregated diagnostic data solely to improve the App, including:</p>
-                <ul>
-                    <li>General device information (OS version, device model) for compatibility purposes</li>
-                </ul>
-                <p>This data <strong>cannot be used to identify individual users</strong> and is not linked to any
-                    account or personal information.</p>
+                <p><strong>h) Remote Configuration:</strong></p>
+                <p>The App uses <strong>Firebase Remote Config</strong> (Google LLC) to retrieve feature availability
+                    flags and, occasionally, important service messages (e.g., a notice about a critical update). This
+                    is a simple configuration download — no personal data is collected and no profile is built.</p>
 
-                <p><strong>f) Data We Do NOT Collect:</strong></p>
+                <p><strong>i) Data We Do NOT Collect:</strong></p>
                 <ul>
                     <li>We do not collect your location data</li>
                     <li>We do not collect your contacts, photos, or files</li>
                     <li>We do not collect advertising identifiers (IDFA/AAID)</li>
-                    <li>We do not track you across other apps or websites</li>
+                    <li>We do not use analytics or marketing SDKs, and we do not track you across other apps or
+                        websites</li>
                     <li>We do not use cookies or web tracking technologies within the App</li>
+                    <li>We do not monitor what you watch — viewing history exists only for your own "continue
+                        watching" convenience, on your device and (if signed in) in your private account space</li>
                 </ul>
 
                 <h2>3. Legal Basis for Processing</h2>
@@ -133,38 +178,39 @@
                         necessary to provide the App's services (authentication, cloud sync, subscription management)
                     </li>
                     <li><strong>Legitimate interests</strong> (Art. 6(1)(f)): Processing anonymous diagnostic data to
-                        improve App stability, fix bugs, and enhance performance. This processing does not override
-                        your fundamental rights as the data is non-identifiable</li>
+                        improve App stability, and processing the pseudonymous device identifier to prevent free-trial
+                        abuse. These processing activities do not override your fundamental rights, as the data is
+                        non-identifiable or strictly limited to fraud prevention</li>
                     <li><strong>Consent</strong> (Art. 6(1)(a)): Where required, we obtain your explicit consent before
-                        processing (e.g., enabling push notifications, activating cloud sync). You may withdraw consent
-                        at any time</li>
+                        processing (e.g., enabling notification permissions). You may withdraw consent at any
+                        time</li>
                 </ul>
 
                 <h2>4. How We Use Your Information</h2>
                 <p>We use the information we collect exclusively for the following purposes:</p>
                 <ul>
                     <li>To provide, operate, and maintain the App</li>
-                    <li>To authenticate your account and enable cloud sync functionality</li>
-                    <li>To verify and manage your subscription status</li>
-                    <li>To send local push notifications for program reminders <strong>you</strong> have set (these are
+                    <li>To authenticate your account and enable cloud sync of your playlists, profiles, favorites, and
+                        playback progress across your devices</li>
+                    <li>To verify and manage your subscription status and free trial</li>
+                    <li>To send local notifications for program reminders <strong>you</strong> have set (these are
                         processed entirely on your device; no notification data is sent to our servers)</li>
                     <li>To send essential service communications (e.g., password reset emails)</li>
                     <li>To improve the App through aggregated, anonymous diagnostic data</li>
                     <li>To respond to your support inquiries</li>
                 </ul>
                 <p>We <strong>do not</strong> use your data for advertising, profiling, automated decision-making, or
-                    any purpose not listed above.</p>
+                    any purpose not listed above. We <strong>never sell</strong> your data.</p>
 
                 <h2>5. Data Storage, Security, and Retention</h2>
 
                 <p><strong>Storage:</strong></p>
                 <ul>
-                    <li><strong>Local data</strong> (playlists, favorites, settings, viewing history) is stored solely
-                        on
-                        your device and is not accessible to us</li>
+                    <li><strong>Local data</strong> (playlists, profiles, favorites, settings, viewing history,
+                        offline downloads) is stored solely on your device and is not accessible to us</li>
                     <li><strong>Account data</strong> (if you create an account) is stored securely using Google
-                        Firebase
-                        services (Firebase Authentication and Cloud Firestore), hosted in the European Union</li>
+                        Firebase services (Firebase Authentication and Cloud Firestore), hosted in the European
+                        Union</li>
                 </ul>
 
                 <p><strong>Security measures:</strong></p>
@@ -173,9 +219,13 @@
                         Security)</li>
                     <li>Playlist credentials stored locally on your device are <strong>encrypted at rest using
                         AES-256</strong>, with the encryption key secured in the device's native keychain</li>
+                    <li>Offline downloads and their metadata are stored in the App's private, sandboxed storage,
+                        with metadata kept in an encrypted local database</li>
                     <li>Data at rest in Firebase is encrypted using AES-256</li>
                     <li>Access to user data is restricted by Firebase Security Rules to the authenticated user only</li>
                     <li>Passwords are hashed using industry-standard algorithms and are never stored in plain text</li>
+                    <li>Playlist URLs and credentials are automatically scrubbed from crash reports before they leave
+                        your device</li>
                 </ul>
 
                 <p><strong>Data retention:</strong></p>
@@ -183,6 +233,8 @@
                     <li>Account data is retained for as long as your account is active</li>
                     <li>When you delete your account (Settings → Account → Delete Account), all associated data is
                         permanently and irrecoverably deleted from our servers within 30 days</li>
+                    <li>The pseudonymous device identifier used for trial management is retained only as long as
+                        necessary to enforce the one-trial-per-device policy</li>
                     <li>Anonymous diagnostic data is retained for a maximum of 12 months, after which it is
                         automatically purged</li>
                     <li>Local data on your device is retained until you uninstall the App or clear App data</li>
@@ -193,12 +245,25 @@
                     in accordance with their own privacy policies:</p>
                 <ul>
                     <li><strong>Firebase Authentication</strong> (Google LLC) — user account management and
-                        authentication. Data processed: email address, hashed password.
+                        authentication (email/password, Google Sign-In, Sign in with Apple). Data processed: email
+                        address, hashed credentials.
                         <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy
                             Policy</a>
                     </li>
-                    <li><strong>Cloud Firestore</strong> (Google LLC) — cloud storage for synced playlist data. Data
-                        processed: playlist URLs, favorites, settings (only if cloud sync is enabled).
+                    <li><strong>Cloud Firestore</strong> (Google LLC) — cloud storage for synced data. Data
+                        processed: playlist URLs and credentials, profiles, favorites, viewing progress, settings
+                        (only if you sign in), and the pseudonymous trial device identifier.
+                        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy
+                            Policy</a>
+                    </li>
+                    <li><strong>Firebase Remote Config</strong> (Google LLC) — feature flags and service messages. No
+                        personal data is collected.
+                        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy
+                            Policy</a>
+                    </li>
+                    <li><strong>Firebase Crashlytics</strong> (Google LLC) — anonymous crash reporting. Data
+                        processed: device model, OS version, stack traces (with credentials scrubbed). No personally
+                        identifiable information is collected.
                         <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy
                             Policy</a>
                     </li>
@@ -207,14 +272,17 @@
                         personal details.
                         <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
                     </li>
-                    <li><strong>Firebase Crashlytics</strong> (Google LLC) — anonymous crash reporting. Data
-                        processed: device model, OS version, stack traces. No personally identifiable information is
-                        collected.
-                        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy
+                    <li><strong>Google Sign-In</strong> (Google LLC) — optional sign-in method. Data processed: your
+                        Google account email and basic profile, as authorized by you.
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+                    </li>
+                    <li><strong>Sign in with Apple</strong> (Apple Inc.) — optional sign-in method. Data processed:
+                        the email address you choose to share (or a private relay address).
+                        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy
                             Policy</a>
                     </li>
                     <li><strong>Google Cast SDK</strong> (Google LLC) — Chromecast functionality. No personal data is
-                        transmitted; only media playback commands are sent to the Cast device on your local network.
+                        transmitted to us; media playback commands are sent to the Cast device on your local network.
                     </li>
                 </ul>
                 <p>We have ensured that all third-party processors offer adequate levels of data protection. Firebase
@@ -223,12 +291,13 @@
 
                 <h2>7. International Data Transfers</h2>
                 <p>Your data may be transferred to and processed in countries outside the European Economic Area (EEA),
-                    specifically to servers operated by Google LLC in the United States. These transfers are protected
-                    by:</p>
+                    specifically to servers operated by Google LLC and RevenueCat, Inc. in the United States. These
+                    transfers are protected by:</p>
                 <ul>
-                    <li>The EU-U.S. Data Privacy Framework (DPF), under which Google LLC is certified</li>
+                    <li>The EU-U.S. Data Privacy Framework (DPF), under which Google LLC and RevenueCat, Inc. are
+                        certified</li>
                     <li>Standard Contractual Clauses (SCCs) approved by the European Commission</li>
-                    <li>Google's Data Processing Terms and security commitments</li>
+                    <li>The providers' Data Processing Terms and security commitments</li>
                 </ul>
 
                 <h2>8. Data Sharing</h2>
@@ -269,10 +338,12 @@
 
                 <h2>10. Children's Privacy</h2>
                 <p>NiPa Player is not directed to children under the age of 16 (or the applicable minimum age in your
-                    jurisdiction under GDPR). We do not knowingly collect personal information from children. If you
-                    are a parent or guardian and believe that your child has provided us with personal data, please
-                    contact us at <a href="mailto:dev@nipaplayer.com">dev@nipaplayer.com</a> and we will promptly
-                    delete such information.</p>
+                    jurisdiction under GDPR). We do not knowingly collect personal information from children. Kids
+                    profiles are a convenience feature managed entirely by the account holder — children do not create
+                    accounts and no data about them is collected by us. If you are a parent or guardian and believe
+                    that your child has provided us with personal data, please contact us at
+                    <a href="mailto:dev@nipaplayer.com">dev@nipaplayer.com</a> and we will promptly delete such
+                    information.</p>
 
                 <h2>11. Content Disclaimer</h2>
                 <p>NiPa Player is a <strong>media player application</strong>. We do not provide, host, stream,
@@ -283,12 +354,12 @@
                 <p>NiPa Studio bears no responsibility for the nature, legality, or availability of any content
                     accessed through user-provided playlists.</p>
 
-                <h2>12. Push Notifications</h2>
-                <p>The App may send local push notifications for program reminders that you have explicitly set. These
-                    notifications are:</p>
+                <h2>12. Notifications</h2>
+                <p>The App may show local notifications for program reminders that you have explicitly set, and for the
+                    progress of downloads you have started. These notifications are:</p>
                 <ul>
                     <li>Processed <strong>entirely on your device</strong> (no data is sent to our servers)</li>
-                    <li>Only triggered after you grant notification permission</li>
+                    <li>Only shown after you grant notification permission</li>
                     <li>Fully optional — you can disable them at any time in your device settings or within the App</li>
                 </ul>
 

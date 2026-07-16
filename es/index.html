@@ -29,7 +29,13 @@
   <meta name="twitter:image" content="https://www.nipaplayer.com/assets/icon.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0a0a0f">
 
   <!-- Fonts (preconnect + non-blocking stylesheet; styles.css no longer @imports them) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,8 +78,7 @@
   <nav class="nav" id="nav">
     <div class="container">
       <a href="./" class="nav-brand">
-        <img src="../assets/icon-128.png" alt="NiPa Player" width="128" height="128" onerror="this.style.display='none'">
-        <span>NiPa Player</span>
+        <img src="/assets/wordmark.svg" alt="NiPa Player" class="nav-wordmark" height="44">
       </a>
       <ul class="nav-links">
         <li><a href="#features">Funciones</a></li>
