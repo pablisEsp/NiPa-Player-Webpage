@@ -1594,6 +1594,18 @@ img {
   color: var(--accent-light);
 }
 
+/* Buttons keep their own colour inside legal-style pages. The rule above is
+   more specific than .btn-primary / .btn-secondary, so without this a button
+   placed here gets repainted accent-light — unreadable on the primary
+   gradient. */
+.legal-content .btn-primary {
+  color: #fff;
+}
+
+.legal-content .btn-secondary {
+  color: var(--text-primary);
+}
+
 /* ── FAQ Page ── */
 .faq-wrapper {
   max-width: 800px;

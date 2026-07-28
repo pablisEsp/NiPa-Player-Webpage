@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión iniciada — NiPa Player</title>
+    <meta name="description" content="Has iniciado sesión en NiPa Player.">
+    <!-- Página de aterrizaje del inicio de sesión de escritorio, no un destino
+         en sí: fuera de los resultados de búsqueda y del sitemap. -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0f0f1a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav class="nav scrolled">
+        <div class="container">
+            <a href="./" class="nav-brand">
+                <img src="/assets/wordmark.svg" alt="NiPa Player" class="nav-wordmark" height="44">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="../signed-in.html" hreflang="en" lang="en">EN</a></li>
+                <li><a href="./#download" class="nav-cta">Descargar</a></li>
+            </ul>
+            <button class="nav-toggle"
+                onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'"
+                aria-label="Menú">☰</button>
+        </div>
+    </nav>
+
+    <!-- Resultado del inicio de sesión -->
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-content" style="text-align: center; max-width: 560px;">
+                <div
+                    style="width: 88px; height: 88px; margin: 0 auto 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.25);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
+                        stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                </div>
+
+                <h1>Sesión iniciada</h1>
+                <p style="font-size: 1.05rem;">Ya puedes cerrar esta pestaña y volver a NiPa Player.</p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Tus listas, favoritos y suscripción quedan
+                    vinculados a esta cuenta en todos tus dispositivos.</p>
+
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                    <a href="./faq.html" class="btn-secondary">¿Necesitas ayuda?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <span>&copy; 2026 NiPa Studio. Todos los derechos reservados.</span>
+                <div>
+                    <a href="./" style="color: var(--text-muted);">Inicio</a> &nbsp;·&nbsp;
+                    <a href="../privacy-policy.html" style="color: var(--text-muted);">Política de privacidad</a>
+                    &nbsp;·&nbsp;
+                    <a href="../terms.html" style="color: var(--text-muted);">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
