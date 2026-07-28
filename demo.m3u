@@ -1,0 +1,78 @@
+#EXTM3U
+# NiPa Player - demo playlist
+# https://www.nipaplayer.com/demo.m3u
+#
+# VIDEO CONTENT
+# All video in this playlist consists of excerpts from the Blender Foundation
+# open movies "Big Buck Bunny" (peach.blender.org) and "Sintel"
+# (durian.blender.org), licensed under Creative Commons Attribution 3.0.
+#   Attribution: (CC) Blender Foundation | www.blender.org
+#   License:     https://creativecommons.org/licenses/by/3.0/
+#   Changes:     clips were re-encoded, shortened and re-titled for demo use.
+#
+# ARTWORK AND TITLES
+# All titles and poster artwork are fictional and AI-generated. They do not
+# refer to, and are not affiliated with, any real film, series, channel or
+# broadcaster.
+#
+# Provided by NiPa Studio for app-store review and product screenshots.
+# No login or credentials required. Hosted on our own infrastructure.
+
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/01-neon-horizon.jpg" group-title="Featured",Neon Horizon
+https://www.nipaplayer.com/demo/video/bbb-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/02-starfall-protocol.jpg" group-title="Featured",Starfall Protocol
+https://www.nipaplayer.com/demo/video/sintel-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/03-the-amber-cipher.jpg" group-title="Featured",The Amber Cipher
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/04-midnight-cartographer.jpg" group-title="Featured",Midnight Cartographer
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/05-ironbloom.jpg" group-title="Action & Adventure",Ironbloom
+https://www.nipaplayer.com/demo/video/bbb-1080p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/06-cobalt-dawn.jpg" group-title="Action & Adventure",Cobalt Dawn
+https://www.nipaplayer.com/demo/video/bbb-trailer.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/07-northwind.jpg" group-title="Action & Adventure",Northwind
+https://www.nipaplayer.com/demo/video/bbb-trailer.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/08-the-long-fold.jpg" group-title="Action & Adventure",The Long Fold
+https://www.nipaplayer.com/demo/video/sintel-1080p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/09-glass-meridian.jpg" group-title="Sci-Fi",Glass Meridian
+https://www.nipaplayer.com/demo/video/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/10-velvet-static.jpg" group-title="Sci-Fi",Velvet Static
+https://www.nipaplayer.com/demo/video/bbb-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/11-solstice-drift.jpg" group-title="Sci-Fi",Solstice Drift
+https://www.nipaplayer.com/demo/video/sintel-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/12-paper-lanterns.jpg" group-title="Drama",Paper Lanterns
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/13-the-quiet-ascent.jpg" group-title="Drama",The Quiet Ascent
+https://www.nipaplayer.com/demo/video/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/14-marrow-mist.jpg" group-title="Drama",Marrow & Mist
+https://www.nipaplayer.com/demo/video/bbb-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/15-echo-chamber.jpg" group-title="Comedy",Echo Chamber
+https://www.nipaplayer.com/demo/video/sintel-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/16-sunday-astronauts.jpg" group-title="Comedy",Sunday Astronauts
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/17-nebula-chronicles-s01e01.jpg" group-title="Series",Nebula Chronicles S01E01
+https://www.nipaplayer.com/demo/video/sintel-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/18-nebula-chronicles-s01e02.jpg" group-title="Series",Nebula Chronicles S01E02
+https://www.nipaplayer.com/demo/video/bbb-1080p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/19-nebula-chronicles-s01e03.jpg" group-title="Series",Nebula Chronicles S01E03
+https://www.nipaplayer.com/demo/video/bbb-trailer.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/20-silent-harbor-s01e01.jpg" group-title="Series",Silent Harbor S01E01
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/21-silent-harbor-s01e02.jpg" group-title="Series",Silent Harbor S01E02
+https://www.nipaplayer.com/demo/video/bbb-trailer.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/22-the-fifth-column-s01e01.jpg" group-title="Series",The Fifth Column S01E01
+https://www.nipaplayer.com/demo/video/sintel-trailer-480p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/23-the-fifth-column-s01e02.jpg" group-title="Series",The Fifth Column S01E02
+https://www.nipaplayer.com/demo/video/sintel-1080p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/24-nova-news-hd.jpg" group-title="Live TV",Nova News HD
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/25-pulse-sports.jpg" group-title="Live TV",Pulse Sports
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/26-cine-clasico.jpg" group-title="Live TV",Cine Clasico
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/27-kids-zone.jpg" group-title="Live TV",Kids Zone
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/28-beat-fm-tv.jpg" group-title="Live TV",Beat FM TV
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
+#EXTINF:-1 tvg-logo="https://www.nipaplayer.com/demo/art/29-world-explorer.jpg" group-title="Live TV",World Explorer
+https://www.nipaplayer.com/demo/live/sintel-trailer-720p.mp4
