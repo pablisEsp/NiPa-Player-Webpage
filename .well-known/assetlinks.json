@@ -5,7 +5,9 @@
       "namespace": "android_app",
       "package_name": "com.nipaplayer.app",
       "sha256_cert_fingerprints": [
-        "REEMPLAZA_CON_SHA256_DE_PLAY_APP_SIGNING"
+        "B1:29:F3:80:45:05:C7:32:FB:07:D3:71:E2:9F:27:E2:5B:0C:B0:67:F9:72:33:D6:48:23:35:11:53:8F:CB:71",
+        "B0:E0:CA:76:10:24:27:2E:FD:21:40:12:B7:EB:C6:B6:DC:E3:9B:77:D6:C4:B8:E8:21:63:E0:B8:5A:CD:83:09",
+        "B9:F5:DB:D9:6C:DC:65:BC:D6:58:5E:1A:B9:2F:23:E7:34:F6:75:A8:72:10:26:2D:93:06:FD:71:BE:EA:41:E4"
       ]
     }
   }
