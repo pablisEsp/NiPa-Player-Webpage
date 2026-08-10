@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["REEMPLAZA_TEAM_ID.com.pablolopez.iptvPlayer"],
+        "components": [
+          { "/": "/tv", "comment": "TV pairing QR deep link" },
+          { "/": "/tv/", "comment": "Trailing-slash variant" }
+        ]
+      }
+    ]
+  }
+}
