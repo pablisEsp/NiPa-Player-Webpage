@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -518,15 +518,15 @@
   <!-- Navigation -->
   <nav class="nav scrolled">
     <div class="container">
-      <a href="./" class="nav-brand">
+      <a href="/es/" class="nav-brand">
         <img src="/assets/wordmark.svg" alt="NiPa Player" class="nav-wordmark" height="44">
       </a>
       <ul class="nav-links">
-        <li><a href="./">Inicio</a></li>
-        <li><a href="./#features">Funciones</a></li>
-        <li><a href="./#pricing">Precios</a></li>
-        <li><a href="../faq.html" hreflang="en" lang="en">EN</a></li>
-        <li><a href="./#download" class="nav-cta">Descargar</a></li>
+        <li><a href="/es/">Inicio</a></li>
+        <li><a href="/es/#features">Funciones</a></li>
+        <li><a href="/es/#pricing">Precios</a></li>
+        <li><a href="/faq.html" hreflang="en" lang="en">EN</a></li>
+        <li><a href="/es/#download" class="nav-cta">Descargar</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
     </div>
@@ -1018,56 +1018,16 @@
       <div class="footer-bottom" style="border-top: none; padding-top: 0;">
         <span>&copy; 2026 NiPa Studio. Todos los derechos reservados.</span>
         <div>
-          <a href="./" style="color: var(--text-muted);">Inicio</a> &nbsp;·&nbsp;
-          <a href="../privacy-policy.html" style="color: var(--text-muted);">Política de privacidad</a> &nbsp;·&nbsp;
-          <a href="../terms.html" style="color: var(--text-muted);">Términos</a>
+          <a href="/es/" style="color: var(--text-muted);">Inicio</a> &nbsp;·&nbsp;
+          <a href="/privacy-policy.html" style="color: var(--text-muted);">Política de privacidad</a> &nbsp;·&nbsp;
+          <a href="/terms.html" style="color: var(--text-muted);">Términos</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-  // Accordion toggles (markup is server-rendered; JS only adds behavior)
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const open = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !open);
-      this.parentElement.classList.toggle('open', !open);
-    });
-  });
-
-  // Search
-  const searchInput = document.getElementById('faqSearch');
-  const noResults = document.getElementById('faqNoResults');
-  searchInput.addEventListener('input', function() {
-    const q = this.value.toLowerCase().trim();
-    let found = 0;
-    document.querySelectorAll('.faq-section').forEach(sec => {
-      let sectionFound = 0;
-      sec.querySelectorAll('.faq-item').forEach(item => {
-        const text = item.textContent.toLowerCase();
-        const match = !q || text.includes(q);
-        item.style.display = match ? '' : 'none';
-        if (match) { sectionFound++; found++; }
-      });
-      sec.style.display = sectionFound ? '' : 'none';
-    });
-    noResults.style.display = found ? 'none' : '';
-  });
-
-  // Mobile nav
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.querySelector('.nav-links');
-  let menuOpen = false;
-  navToggle?.addEventListener('click', () => {
-    menuOpen = !menuOpen;
-    navLinks.classList.toggle('nav-menu-open', menuOpen);
-    navToggle.textContent = menuOpen ? '✕' : '☰';
-  });
-  navLinks?.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
-    if (menuOpen) { menuOpen = false; navLinks.classList.remove('nav-menu-open'); navToggle.textContent = '☰'; }
-  }));
-  </script>
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/faq.js" defer></script>
 
 </body>
 </html>
