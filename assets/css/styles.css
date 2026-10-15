@@ -380,17 +380,18 @@ img {
 }
 
 /* Official store badge artwork, both cropped to their visible edges so they
-   render at the same width. */
+   render in an identical 162x54 box (the Google art is ~10% wider by
+   nature, so it is squeezed slightly to match Apple's proportions). */
 .store-badge-link .badge-appstore {
   display: block;
   width: 162px;
-  height: auto;
+  height: 54px;
 }
 
 .store-badge-link .badge-gplay {
   display: block;
   width: 162px;
-  height: auto;
+  height: 54px;
 }
 
 .store-badge {
