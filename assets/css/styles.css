@@ -379,9 +379,8 @@ img {
   border-radius: 8px;
 }
 
-/* Official store badge artwork. Apple's SVG has no padding (54px tall);
-   Google's PNG ships with built-in clear space, so it renders at 80px with
-   negative margins to visually match the Apple badge height. */
+/* Official store badge artwork, both cropped to their visible edges so they
+   render at the same height. */
 .store-badge-link .badge-appstore {
   display: block;
   height: 54px;
@@ -390,9 +389,8 @@ img {
 
 .store-badge-link .badge-gplay {
   display: block;
-  height: 80px;
+  height: 54px;
   width: auto;
-  margin: -13px;
 }
 
 .store-badge {
